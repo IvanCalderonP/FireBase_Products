@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif; /* Fuente general */
+    margin: 0; /* Elimina márgenes predeterminados */
+}
+
+.navigation {
+    background-color: #007bff; /* Color de fondo del menú */
+    padding: 15px 30px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    position: sticky; /* Mantiene el menú en la parte superior al hacer scroll */
+    top: 0; /* Se adhiere a la parte superior */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.nav-list {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    display: flex; /* Usa Flexbox para alinear elementos horizontalmente */
+    justify-content: space-around; /* Espaciado uniforme entre elementos */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina espaciado interno */
+}
+
+.nav-item {
+    position: relative; /* Posicionamiento relativo para efectos hover */
+}
+
+.nav-link {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina subrayado */
+    padding: 10px 20px; /* Espaciado interno en los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves para el hover */
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efecto hover con fondo claro */
+    transform: scale(1.05); /* Efecto de escalado al pasar el ratón */
+}
+
+/* Estilo del contenido principal */
+.main-content {
+    padding: 20px; /* Espaciado interno para el contenido principal */
+}

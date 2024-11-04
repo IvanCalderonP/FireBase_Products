@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif; /* Fuente general */
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.product-list-container {
+    padding: 20px; /* Espaciado interno */
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.product-grid {
+    display: grid; /* Usar grid para organizar los productos */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Columnas responsivas */
+    gap: 20px; /* Espacio entre los elementos de la cuadrícula */
+}
+
+.product-card {
+    background-color: rgba(190, 0, 219, 0.668); /* Fondo blanco para las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 15px; /* Espaciado interno en las tarjetas */
+    transition: transform 0.2s ease; /* Transición suave para el hover */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+}
+
+.product-name {
+    font-size: 1.5rem; /* Tamaño de fuente para el nombre del producto */
+    margin-bottom: 10px; /* Espacio debajo del nombre */
+}
+
+.product-description {
+    font-size: 1rem; /* Tamaño de fuente para la descripción */
+    margin-bottom: 15px; /* Espacio debajo de la descripción */
+}
+
+.product-actions {
+    display: flex; /* Usar flexbox para alinear botones */
+    justify-content: space-between; /* Espacio entre botones */
+}
+
+.edit-button,
+.delete-button {
+    padding: 10px 15px; /* Espaciado interno en los botones */
+    border-radius: 5px; /* Bordes redondeados en los botones */
+    border: none; /* Sin borde predeterminado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.edit-button {
+    background-color: #4facfe; /* Color de fondo azul para editar */
+    color: white; /* Color del texto en el botón de editar */
+}
+
+.delete-button {
+    background-color: #d33; /* Color de fondo rojo para eliminar */
+    color: white; /* Color del texto en el botón de eliminar */
+}
+
+.edit-button:hover {
+    background-color: #00f2fe; /* Efecto hover en el botón de editar */
+}
+
+.delete-button:hover {
+    background-color: #ff4d4d; /* Efecto hover en el botón de eliminar */
+}

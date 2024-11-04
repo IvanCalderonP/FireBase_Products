@@ -1,0 +1,59 @@
+body {
+    margin: 0; /* Elimina márgenes predeterminados */
+    font-family: 'Arial', sans-serif; /* Fuente general */
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); /* Fondo degradado */
+    color: rgb(0, 0, 0); /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espaciado interno */
+}
+
+.home-title {
+    font-size: 3rem; /* Tamaño de fuente grande para el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+}
+
+.home-description {
+    font-size: 1.5rem; /* Tamaño de fuente para la descripción */
+    margin-bottom: 30px; /* Espacio debajo de la descripción */
+    line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+}
+
+.home-link {
+    padding: 15px 30px; /* Espaciado interno del enlace */
+    background-color: white; /* Color de fondo blanco para el botón */
+    color: #007bff; /* Color del texto en el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina subrayado */
+    font-size: 1.2rem; /* Tamaño de fuente del enlace */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+}
+
+.home-link:hover {
+    background-color: rgba(225, 0, 255, 0.2); /* Efecto hover con fondo azul claro */
+    transform: scale(1.05); /* Efecto de escalado al pasar el ratón */
+}
+
+/* Estilo adicional para una mejor presentación en pantallas grandes */
+@media (min-width: 768px) {
+    .home-title {
+        font-size: 4rem; /* Aumenta el tamaño en pantallas más grandes */
+    }
+
+    .home-description {
+        font-size: 1.8rem; /* Aumenta el tamaño en pantallas más grandes */
+    }
+
+    .home-link {
+        font-size: 1.5rem; /* Aumenta el tamaño del enlace en pantallas más grandes */
+        padding: 15px 40px; /* Ajusta el espaciado interno en pantallas más grandes */
+    }
+}

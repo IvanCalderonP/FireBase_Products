@@ -1,0 +1,55 @@
+body {
+    font-family: 'Arial', sans-serif; /* Fuente general */
+}
+
+.edit-product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); /* Fondo degradado */
+    color: rgb(0, 0, 0); /* Color del texto */
+}
+
+.edit-title {
+    font-size: 2.5rem; /* Tamaño de fuente grande para el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.edit-form {
+    background-color: white; /* Fondo blanco para el formulario */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 400px; /* Ancho máximo del formulario */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre campos del formulario */
+}
+
+label {
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+.form-input {
+    padding: 10px; /* Espaciado interno en los inputs */
+    border-radius: 5px; /* Bordes redondeados en los inputs */
+    border: 1px solid #ccc; /* Borde gris claro */
+    width:  95%; /* Ocupa todo el ancho del contenedor */
+}
+
+.submit-button {
+    padding: 10px; /* Espaciado interno en el botón */
+    background-color: #4facfe; /* Color de fondo azul para el botón */
+    color: white; /* Color del texto en el botón */
+    border: none; /* Sin borde predeterminado */
+    border-radius: 5px; /* Bordes redondeados en el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.submit-button:hover {
+    background-color: #00f2fe; /* Efecto hover en el botón */
+}
