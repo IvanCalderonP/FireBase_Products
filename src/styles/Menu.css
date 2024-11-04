@@ -1,43 +1,43 @@
 body {
-    font-family: 'Arial', sans-serif; /* Fuente general */
-    margin: 0; /* Elimina márgenes predeterminados */
+    font-family: 'Arial', sans-serif; 
+    margin: 0; 
 }
 
 .navigation {
-    background-color: #007bff; /* Color de fondo del menú */
-    padding: 15px 30px; /* Espaciado interno */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
-    position: sticky; /* Mantiene el menú en la parte superior al hacer scroll */
-    top: 0; /* Se adhiere a la parte superior */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    background-color: #007bff;
+    padding: 15px 30px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
 }
 
 .nav-list {
-    list-style-type: none; /* Elimina los puntos de la lista */
-    display: flex; /* Usa Flexbox para alinear elementos horizontalmente */
-    justify-content: space-around; /* Espaciado uniforme entre elementos */
-    margin: 0; /* Elimina márgenes predeterminados */
-    padding: 0; /* Elimina espaciado interno */
+    list-style-type: none; 
+    display: flex;
+    justify-content: space-around;
+    margin: 0; 
+    padding: 0;
 }
 
 .nav-item {
-    position: relative; /* Posicionamiento relativo para efectos hover */
+    position: relative;
 }
 
 .nav-link {
-    color: white; /* Color del texto */
-    text-decoration: none; /* Elimina subrayado */
-    padding: 10px 20px; /* Espaciado interno en los enlaces */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves para el hover */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
 .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Efecto hover con fondo claro */
-    transform: scale(1.05); /* Efecto de escalado al pasar el ratón */
+    background-color: rgba(255, 255, 255, 0.2); 
+    transform: scale(1.05); 
 }
 
-/* Estilo del contenido principal */
+
 .main-content {
-    padding: 20px; /* Espaciado interno para el contenido principal */
+    padding: 20px;
 }

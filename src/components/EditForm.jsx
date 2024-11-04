@@ -3,22 +3,19 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { doc, getDoc, updateDoc } from 'firebase/firestore';
 import { db } from '../firebase/appConfig';
 import { useForm } from 'react-hook-form';
-import '../styles/EditForm.css'; // Asegúrate de tener este archivo para los estilos
+import '../styles/EditForm.css';
 
 export default function EditForm() {
     const { register, handleSubmit, setValue } = useForm();
     const { id } = useParams();
     const navigate = useNavigate();
 
-    // Montando el producto seleccionado
     useEffect(() => {
         const getProductById = async () => {
             const productDoc = await getDoc(doc(db, "products", id));
 
-            // Validamos si el documento existe
             if (productDoc.exists()) {
                 const productData = productDoc.data();
-                // Mandar la información del producto al formulario
                 setValue('name', productData.name);
                 setValue('description', productData.description);
             } else {

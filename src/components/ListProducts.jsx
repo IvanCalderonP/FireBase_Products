@@ -18,7 +18,7 @@ export default function ListProducts() {
                 setProducts(array_products);
             }
         );
-        return () => unsubscribe(); // Limpiar el listener
+        return () => unsubscribe(); 
     }, []);
 
     const deleteProduct = (id) => {

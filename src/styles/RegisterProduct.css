@@ -1,64 +1,64 @@
 body {
-    font-family: 'Arial', sans-serif; /* Fuente general */
+    font-family: 'Arial', sans-serif;
 }
 
 .register-product-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente */
-    justify-content: center; /* Centra verticalmente */
-    height: 100vh; /* Ocupa toda la altura de la ventana */
-    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); /* Fondo degradado */
-    color: rgb(0, 0, 0); /* Color del texto */
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    color: rgb(0, 0, 0);
 }
 
 .register-title {
-    font-size: 2.5rem; /* Tamaño de fuente grande para el título */
-    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 .register-form {
-    background-color: white; /* Fondo blanco para el formulario */
+    background-color: white;
     padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    width: 100%; /* Ancho completo del contenedor */
-    max-width: 400px; /* Ancho máximo del formulario */
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 400px;
 }
 
 .form-group {
-    margin-bottom: 15px; /* Espacio entre campos del formulario */
+    margin-bottom: 15px; 
 }
 
 label {
-    font-weight: bold; /* Negrita para las etiquetas */
+    font-weight: bold; 
 }
 
 .form-input {
-    padding: 10px; /* Espaciado interno en los inputs */
-    border-radius: 5px; /* Bordes redondeados en los inputs */
-    border: 1px solid #ccc; /* Borde gris claro */
-    width: 95%; /* Ocupa todo el ancho del contenedor */
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    width: 95%; 
 }
 
 .input-error {
-    border-color: #d33; /* Color rojo para el borde en caso de error */
+    border-color: #d33; 
 }
 
 .error-message {
-    color: #d33; /* Color rojo para mensajes de error */
-    font-size: 0.9rem; /* Tamaño de fuente más pequeño para mensajes de error */
+    color: #d33; 
+    font-size: 0.9rem; 
 }
 
 .submit-button {
-    padding: 10px; /* Espaciado interno en el botón */
-    background-color: #4facfe; /* Color de fondo azul para el botón */
-    color: white; /* Color del texto en el botón */
-    border: none; /* Sin borde predeterminado */
-    border-radius: 5px; /* Bordes redondeados en el botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    padding: 10px; 
+    background-color: #4facfe;
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .submit-button:hover {
-    background-color: #00f2fe; /* Efecto hover en el botón */
+    background-color: #00f2fe;
 }
